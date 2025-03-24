@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网络工具箱 - 实用在线工具集合</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .tool-card {
+            transition: all 0.3s ease;
+        }
+        .tool-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <header class="hero-gradient text-white">
+        <div class="container mx-auto px-4 py-16 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">网络工具箱</h1>
+            <p class="text-xl md:text-2xl opacity-90 max-w-2xl mx-auto">一站式解决您的在线工具需求，简单高效地完成各种任务</p>
+        </div>
+    </header>
+
+    <nav class="bg-white shadow-md">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="font-bold text-xl text-indigo-700">工具箱</div>
+                <div class="space-x-4">
+                    <a href="#" class="text-gray-700 hover:text-indigo-600">主页</a>
+                    <a href="#tools" class="text-gray-700 hover:text-indigo-600">工具列表</a>
+                    <a href="#about" class="text-gray-700 hover:text-indigo-600">关于</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mx-auto px-4 py-12">
+        <section id="intro" class="mb-16 text-center">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">强大实用的在线工具集</h2>
+            <p class="text-gray-600 max-w-3xl mx-auto">
+                本站提供多种实用的在线工具，帮助您更高效地完成文本处理、格式转换等工作。
+                所有工具均可在浏览器中直接使用，无需安装任何软件。
+            </p>
+        </section>
+
+        <section id="tools" class="mb-16">
+            <h2 class="text-2xl font-bold text-gray-800 mb-8 text-center">实用工具集</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Markdown清洗工具 -->
+                <a href="markdown-cleaner/index.html" class="tool-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="p-6">
+                        <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
+                            </svg>
+                        </div>
+                        <h3 class="font-bold text-xl mb-2 text-gray-800">Markdown清洗工具</h3>
+                        <p class="text-gray-600 mb-4">
+                            一键转换Markdown格式文本为纯文本，方便粘贴到Word等编辑器中使用，无需手动清理格式。
+                        </p>
+                        <div class="text-indigo-600 font-medium">立即使用 →</div>
+                    </div>
+                </a>
+
+                <!-- 工具占位卡片 - 稍后可添加更多工具 -->
+                <div class="tool-card bg-gray-100 rounded-lg shadow-lg overflow-hidden border-2 border-dashed border-gray-300">
+                    <div class="p-6 flex flex-col items-center justify-center h-full">
+                        <div class="w-12 h-12 bg-gray-200 rounded-lg flex items-center justify-center mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                            </svg>
+                        </div>
+                        <h3 class="font-bold text-xl mb-2 text-gray-500">更多工具开发中</h3>
+                        <p class="text-gray-500 text-center">
+                            我们正在努力开发更多实用工具，敬请期待...
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="bg-white rounded-lg shadow-lg p-8 mb-16">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">关于网络工具箱</h2>
+            <p class="text-gray-600 mb-4">
+                网络工具箱是一个专注于提供高效、简便的在线工具集合的平台。我们的目标是帮助用户解决日常工作中的各种小问题，提高工作效率。
+            </p>
+            <p class="text-gray-600 mb-4">
+                所有工具均采用前端技术实现，在您的浏览器中运行，不会将任何数据上传到服务器，保障您的数据安全。
+            </p>
+            <p class="text-gray-600">
+                如果您有任何建议或需求，欢迎与我们联系！
+            </p>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <h3 class="text-xl font-bold mb-2">网络工具箱</h3>
+                    <p class="text-gray-400">简单高效的在线工具集合</p>
+                </div>
+                <div class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6 items-center">
+                    <a href="#" class="text-gray-300 hover:text-white">主页</a>
+                    <a href="#tools" class="text-gray-300 hover:text-white">工具列表</a>
+                    <a href="#about" class="text-gray-300 hover:text-white">关于</a>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>© 2024 网络工具箱 | 保留所有权利</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 
